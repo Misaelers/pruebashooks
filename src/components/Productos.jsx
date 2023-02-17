@@ -18,8 +18,11 @@ const Productos = () => {
     return (
 
         <div>
-            <button onClick={() => setPage(page + 1)}>Incrementa</button>
-            <button onClick={() => setPage(page - 1)}>Decrementa</button>
+            <h1>Lista de Productos</h1>
+            <div>
+                <button onClick={() => setPage(page + 1)}>Incrementa</button>
+                <button onClick={() => setPage(page - 1)}>Decrementa</button>
+            </div>
             {data.results.map(product => (
 
                 <div key={product.id}>
